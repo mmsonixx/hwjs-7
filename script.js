@@ -34,8 +34,14 @@ for (let i = 0; i < word.length; i++) {
 
 //6
 const array = [1, 4, 10, 60, 50, 100, 47, 90, 120, 6];
-const max = Math.max(...array);
-console.log(max);
+let maxArr = array[0];
+for (const arr of array){
+    if (arr > maxArr) {
+        maxArr = arr;
+   }
+}
+console.log(maxArr);
+
 
 //7
 const paired = [
